@@ -1,0 +1,6 @@
+@FormularOne.AirlineService_HostAddress = http://localhost:5079
+
+GET {{FormularOne.AirlineService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

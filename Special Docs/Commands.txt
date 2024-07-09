@@ -1,0 +1,12 @@
+# Install the EF Core CLI tools globally
+dotnet tool install --global dotnet-ef
+
+# Add the EF Core design package to the DataService project
+cd D:\My\Projects\.NET\FormulaOne.DataService
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+# Restore NuGet packages
+dotnet restore
+
+# Add the initial migration
+dotnet ef migrations add "initial-migration-1" --startup-project ../FormulaOne.Api
